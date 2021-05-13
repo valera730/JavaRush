@@ -1,8 +1,5 @@
 package com.javarush.task.task33.task3305;
 
-
-
-
 public class Motorbike extends Auto {
     private String owner;
 
