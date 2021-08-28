@@ -17,6 +17,7 @@ import java.util.List;
 3. Метод main должен вызывать метод getExpectedClass.
 4. Метод main должен вывести полученный класс на экран.
 */
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(getExpectedClass());
