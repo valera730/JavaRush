@@ -46,4 +46,15 @@ public class Board extends JPanel {
         timer = new Timer(PERIOD_INTERVAL, new GameCycle());
         timer.start();
     }
+
+    private void pause() {
+        isPaused = !isPaused;
+        if (isPaused) {
+            statusbar.setText("paused");
+        } else {
+            statusbar.setText(String.valueOf(numLinesRemoved));
+        }
+
+        repaint();
+    }
 }
