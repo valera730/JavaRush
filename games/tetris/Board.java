@@ -49,18 +49,16 @@ public class Board extends JPanel {
 
     private void pause() {
         isPaused = !isPaused;
-        if (isPaused) {
+        if (isPaused)
             statusbar.setText("paused");
-        } else {
+        else
             statusbar.setText(String.valueOf(numLinesRemoved));
-        }
 
         repaint();
     }
 
      @Override
     public void paintComponent(Graphics g) {
-
         super.paintComponent(g);
         doDrawing(g);
     }
@@ -86,6 +84,29 @@ public class Board extends JPanel {
 
                 drawSquare(g, x * squareWidth(), boardTop + (BOARD_HEIGHT - y - 1) * squareHeight(), curPiece.getShape());
             }
+        }
+    }
+
+    private void dropDown() {
+        int newY = curY;
+
+        while (newY > 0) {
+            if (!tryMove(curPiece, curX, newY - 1))
+                break;
+
+            newY--;
+        }
+        pieceDropped();
+    }
+
+    private void oneLineDown() {
+        if (!tryMove(curPiece, curX, curY - 1))
+            pieceDropped();
+    }
+
+    private void clearBoard() {
+        for (int i = 0; i < BOARD_HEIGHT * BOARD_WIDTH; i++) {
+            board[i] = Tetrominoe.NoShape;
         }
     }
 }
