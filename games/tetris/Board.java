@@ -109,4 +109,31 @@ public class Board extends JPanel {
             board[i] = Tetrominoe.NoShape;
         }
     }
+
+    private void pieceDropped() {
+        for (int i = 0; i < 4; i++) {
+            int x = curX + curPiece.x(i);
+            int y = curY - curPiece.y(i);
+            board[(y * BOARD_WIDTH) + x] = curPiece.getShape();
+        }
+
+        removeFullLines();
+
+        if (!isFallingFinished)
+            newPiece();
+    }
+
+    private void newPiece() {
+        curPiece.setRandomShape();
+        curX = BOARD_WIDTH / 2 + 1;
+        curY = BOARD_HEIGHT - 1 + curPiece.minY();
+
+        if (!tryMove(curPiece, curX, curY)) {
+            curPiece.setShape(Tetrominoe.NoShape);
+            timer.stop();
+
+            var msg = String.format("Game over. Score: %d", numLinesRemoved);
+            statusbar.setText(msg);
+        }
+    }
 }
