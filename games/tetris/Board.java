@@ -211,4 +211,28 @@ public class Board extends JPanel {
         g.drawLine(x + 1, y + squareHeight() - 1, x + squareWidth() - 1, y + squareHeight() - 1);
         g.drawLine(x + squareWidth() - 1, y + squareHeight() - 1, x + squareWidth() - 1, y + 1);
     }
+
+    private class GameCycle implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            doGameCycle();
+        }
+    }
+
+    private void doGameCycle() {
+        update();
+        repaint();
+    }
+
+    private void update() {
+        if (isPaused)
+            return;
+
+        if (isFallingFinished) {
+            isFallingFinished = false;
+            newPiece();
+        } else {
+            oneLineDown();
+        }
+    }
 }
