@@ -235,4 +235,24 @@ public class Board extends JPanel {
             oneLineDown();
         }
     }
+
+    class TAdapter extends KeyAdapter {
+    @Override
+    public void keyPressed(KeyEvent e) {
+
+        if (curPiece.getShape() == Tetrominoe.NoShape)
+            return;
+
+        int keycode = e.getKeyCode();
+
+        switch (keycode) {
+            case KeyEvent.VK_P -> pause();
+            case KeyEvent.VK_LEFT -> tryMove(curPiece, curX - 1, curY);
+            case KeyEvent.VK_RIGHT -> tryMove(curPiece, curX + 1, curY);
+            case KeyEvent.VK_DOWN -> tryMove(curPiece.rotateRight(), curX, curY);
+            case KeyEvent.VK_UP -> tryMove(curPiece.rotateLeft(), curX, curY);
+            case KeyEvent.VK_SPACE -> dropDown();
+            case KeyEvent.VK_D -> oneLineDown();
+        }
+    }
 }
