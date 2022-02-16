@@ -40,4 +40,28 @@ public class Shape {
 
         pieceShape = shape;
     }
+
+    private void setX(int index, int x) { coords[index][0] = x; }
+    private void setY(int index, int y) { coords[index][1] = y; }
+    public int x(int index) { return coords[index][0]; }
+    public int y(int index) { return coords[index][1]; }
+    public Tetrominoe getShape()  { return pieceShape; }
+
+    public void setRandomShape() {
+        var r = new Random();
+        int x = Math.abs(r.nextInt()) % 7 + 1;
+
+        Tetrominoe[] values = Tetrominoe.values();
+        setShape(values[x]);
+    }
+
+    public int minX() {
+        int m = coords[0][0];
+
+        for (int i=0; i < 4; i++) {
+            m = Math.min(m, coords[i][0]);
+        }
+
+        return m;
+    }
 }
