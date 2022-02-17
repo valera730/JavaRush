@@ -90,4 +90,20 @@ public class Shape {
 
         return result;
     }
+
+    public Shape rotateRight() {
+        if (pieceShape == Tetrominoe.SquareShape) {
+            return this;
+        }
+
+        var result = new Shape();
+        result.pieceShape = pieceShape;
+
+        for (int i = 0; i < 4; ++i) {
+            result.setX(i, -y(i));
+            result.setY(i, x(i));
+        }
+
+        return result;
+    }
 }
