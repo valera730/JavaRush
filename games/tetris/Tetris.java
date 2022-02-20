@@ -25,4 +25,15 @@ public class Tetris extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
+
+    JLabel getStatusBar() {
+        return statusbar;
+    }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> {
+            var game = new Tetris();
+            game.setVisible(true);
+        });
+    }
 }
