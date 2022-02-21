@@ -1,4 +1,4 @@
-package com.zetcode;
+package com.valera730;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

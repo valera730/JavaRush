@@ -1,5 +1,16 @@
-public class Board extends JPanel {
+package com.valera730;
 
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.Timer;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class Board extends JPanel {
     private final int BOARD_WIDTH = 10;
     private final int BOARD_HEIGHT = 22;
     private final int PERIOD_INTERVAL = 300;
@@ -239,7 +250,6 @@ public class Board extends JPanel {
     class TAdapter extends KeyAdapter {
     @Override
     public void keyPressed(KeyEvent e) {
-
         if (curPiece.getShape() == Tetrominoe.NoShape)
             return;
 
