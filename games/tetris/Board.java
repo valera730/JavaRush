@@ -1,5 +1,7 @@
 package com.valera730;
 
+import com.valera730.Shape.Tetrominoe;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
