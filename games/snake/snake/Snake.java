@@ -8,8 +8,7 @@ public class Snake extends JFrame {
         initUI();
     }
     
-    private void initUI() {
-        
+    private void initUI() {        
         add(new Board());
                
         setResizable(false);
@@ -18,5 +17,12 @@ public class Snake extends JFrame {
         setTitle("Snake");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> {
+            JFrame ex = new Snake();
+            ex.setVisible(true);
+        });
     }
 }
