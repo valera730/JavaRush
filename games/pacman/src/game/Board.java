@@ -37,4 +37,20 @@ public class Board extends JPanel implements ActionListener {
     private final int PACMAN_ANIM_COUNT = 4;
     private final int MAX_GHOSTS = 12;
     private final int PACMAN_SPEED = 6;
+
+    private int pacAnimCount = PAC_ANIM_DELAY;
+    private int pacAnimDir = 1;
+    private int pacmanAnimPos = 0;
+    private int N_GHOSTS = 6;
+    private int pacsLeft, score;
+    private int[] dx, dy;
+    private int[] ghost_x, ghost_y, ghost_dx, ghost_dy, ghostSpeed;
+
+    private Image ghost;
+    private Image pacman1, pacman2up, pacman2left, pacman2right, pacman2down;
+    private Image pacman3up, pacman3down, pacman3left, pacman3right;
+    private Image pacman4up, pacman4down, pacman4left, pacman4right;
+
+    private int pacman_x, pacman_y, pacmand_x, pacmand_y;
+    private int req_dx, req_dy, view_dx, view_dy;
 }
