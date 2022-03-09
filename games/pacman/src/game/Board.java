@@ -77,5 +77,34 @@ public class Board extends JPanel implements ActionListener {
         1, 17, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 20, 0, 21,
         1, 25, 24, 24, 24, 24, 24, 24, 24, 24, 16, 16, 16, 18, 20,
         9, 8, 8, 8, 8, 8, 8, 8, 8, 8, 25, 24, 24, 24, 28
-};
+    };
+
+    public Board() {
+        loadImages();
+        initVariables();
+        initBoard();
+    }
+
+    private void initBoard() {
+        addKeyListener(new TAdapter());
+
+        setFocusable(true);
+
+        setBackground(Color.black);
+    }
+
+    private void initVariables() {
+        screenData = new short[N_BLOCKS * N_BLOCKS];
+        mazeColor = new Color(5, 100, 5);
+        d = new Dimension(400, 400);
+        ghost_x = new int[MAX_GHOSTS];
+        ghost_dx = new int[MAX_GHOSTS];
+        ghost_y = new int[MAX_GHOSTS];
+        ghost_dy = new int[MAX_GHOSTS];
+        ghostSpeed = new int[MAX_GHOSTS];
+        dx = new int[4];
+        dy = new int[4];
+        timer = new Timer(40, this);
+        timer.start();
+    }
 }
