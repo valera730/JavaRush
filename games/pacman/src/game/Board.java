@@ -107,4 +107,35 @@ public class Board extends JPanel implements ActionListener {
         timer = new Timer(40, this);
         timer.start();
     }
+
+@Override
+    public void addNotify() {
+        super.addNotify();
+
+        initGame();
+    }
+
+    private void doAnim() {
+        pacAnimCount--;
+
+        if (pacAnimCount <= 0) {
+            pacAnimCount = PAC_ANIM_DELAY;
+            pacmanAnimPos = pacmanAnimPos + pacAnimDir;
+
+            if (pacmanAnimPos == (PACMAN_ANIM_COUNT - 1) || pacmanAnimPos == 0) {
+                pacAnimDir = -pacAnimDir;
+            }
+        }
+    }
+
+    private void playGame(Graphics2D g2d) {
+        if (dying) {
+            death();
+        } else {
+            movePacman();
+            drawPacman(g2d);
+            moveGhosts(g2d);
+            checkMaze();
+        }
+    }
 }
