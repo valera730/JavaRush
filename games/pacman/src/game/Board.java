@@ -138,4 +138,33 @@ public class Board extends JPanel implements ActionListener {
             checkMaze();
         }
     }
+
+    private void showIntroScreen(Graphics2D g2d) {
+        g2d.setColor(new Color(0, 32, 48));
+        g2d.fillRect(50, SCREEN_SIZE / 2 - 30, SCREEN_SIZE - 100, 50);
+        g2d.setColor(Color.white);
+        g2d.drawRect(50, SCREEN_SIZE / 2 - 30, SCREEN_SIZE - 100, 50);
+
+        String s = "Press s to start.";
+        Font small = new Font("Helvetica", Font.BOLD, 14);
+        FontMetrics metr = this.getFontMetrics(small);
+
+        g2d.setColor(Color.white);
+        g2d.setFont(small);
+        g2d.drawString(s, (SCREEN_SIZE - metr.stringWidth(s)) / 2, SCREEN_SIZE / 2);
+    }
+
+    private void drawScore(Graphics2D g) {
+        int i;
+        String s;
+
+        g.setFont(smallFont);
+        g.setColor(new Color(96, 128, 255));
+        s = "Score: " + score;
+        g.drawString(s, SCREEN_SIZE / 2 + 96, SCREEN_SIZE + 16);
+
+        for (i = 0; i < pacsLeft; i++) {
+            g.drawImage(pacman3left, i * 28 + 8, SCREEN_SIZE + 1, this);
+        }
+    }
 }
