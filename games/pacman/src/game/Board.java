@@ -167,4 +167,31 @@ public class Board extends JPanel implements ActionListener {
             g.drawImage(pacman3left, i * 28 + 8, SCREEN_SIZE + 1, this);
         }
     }
+
+    private void checkMaze() {
+        short i = 0;
+        boolean finished = true;
+
+        while (i < N_BLOCKS * N_BLOCKS && finished) {
+            if ((screenData[i] & 48) != 0) {
+                finished = false;
+            }
+
+            i++;
+        }
+
+        if (finished) {
+            score += 50;
+
+            if (N_GHOSTS < MAX_GHOSTS) {
+                N_GHOSTS++;
+            }
+
+            if (currentSpeed < maxSpeed) {
+                currentSpeed++;
+            }
+
+            initLevel();
+        }
+    }
 }
