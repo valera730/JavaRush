@@ -281,7 +281,6 @@ public class Board extends JPanel implements ActionListener {
     }
 
     private void movePacman() {
-
         int pos;
         short ch;
 
@@ -324,5 +323,34 @@ public class Board extends JPanel implements ActionListener {
         }
         pacman_x = pacman_x + PACMAN_SPEED * pacmand_x;
         pacman_y = pacman_y + PACMAN_SPEED * pacmand_y;
+    }
+
+    private void drawPacman(Graphics2D g2d) {
+        if (view_dx == -1) {
+            drawPacnanLeft(g2d);
+        } else if (view_dx == 1) {
+            drawPacmanRight(g2d);
+        } else if (view_dy == -1) {
+            drawPacmanUp(g2d);
+        } else {
+            drawPacmanDown(g2d);
+        }
+    }
+
+    private void drawPacmanUp(Graphics2D g2d) {
+        switch (pacmanAnimPos) {
+            case 1:
+                g2d.drawImage(pacman2up, pacman_x + 1, pacman_y + 1, this);
+                break;
+            case 2:
+                g2d.drawImage(pacman3up, pacman_x + 1, pacman_y + 1, this);
+                break;
+            case 3:
+                g2d.drawImage(pacman4up, pacman_x + 1, pacman_y + 1, this);
+                break;
+            default:
+                g2d.drawImage(pacman1, pacman_x + 1, pacman_y + 1, this);
+                break;
+        }
     }
 }
