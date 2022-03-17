@@ -353,4 +353,55 @@ public class Board extends JPanel implements ActionListener {
                 break;
         }
     }
+
+    private void drawPacmanDown(Graphics2D g2d) {
+        switch (pacmanAnimPos) {
+            case 1:
+                g2d.drawImage(pacman2down, pacman_x + 1, pacman_y + 1, this);
+                break;
+            case 2:
+                g2d.drawImage(pacman3down, pacman_x + 1, pacman_y + 1, this);
+                break;
+            case 3:
+                g2d.drawImage(pacman4down, pacman_x + 1, pacman_y + 1, this);
+                break;
+            default:
+                g2d.drawImage(pacman1, pacman_x + 1, pacman_y + 1, this);
+                break;
+        }
+    }
+
+    private void drawPacnanLeft(Graphics2D g2d) {
+        switch (pacmanAnimPos) {
+            case 1:
+                g2d.drawImage(pacman2left, pacman_x + 1, pacman_y + 1, this);
+                break;
+            case 2:
+                g2d.drawImage(pacman3left, pacman_x + 1, pacman_y + 1, this);
+                break;
+            case 3:
+                g2d.drawImage(pacman4left, pacman_x + 1, pacman_y + 1, this);
+                break;
+            default:
+                g2d.drawImage(pacman1, pacman_x + 1, pacman_y + 1, this);
+                break;
+        }
+    }
+
+    private void drawPacmanRight(Graphics2D g2d) {
+        switch (pacmanAnimPos) {
+            case 1:
+                g2d.drawImage(pacman2right, pacman_x + 1, pacman_y + 1, this);
+                break;
+            case 2:
+                g2d.drawImage(pacman3right, pacman_x + 1, pacman_y + 1, this);
+                break;
+            case 3:
+                g2d.drawImage(pacman4right, pacman_x + 1, pacman_y + 1, this);
+                break;
+            default:
+                g2d.drawImage(pacman1, pacman_x + 1, pacman_y + 1, this);
+                break;
+        }
+    }
 }
