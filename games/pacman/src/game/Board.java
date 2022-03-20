@@ -489,4 +489,50 @@ public class Board extends JPanel implements ActionListener {
         view_dy = 0;
         dying = false;
     }
+
+    private void loadImages() {
+        ghost = new ImageIcon("src/resources/images/ghost.png").getImage();
+        pacman1 = new ImageIcon("src/resources/images/pacman.png").getImage();
+        pacman2up = new ImageIcon("src/resources/images/up1.png").getImage();
+        pacman3up = new ImageIcon("src/resources/images/up2.png").getImage();
+        pacman4up = new ImageIcon("src/resources/images/up3.png").getImage();
+        pacman2down = new ImageIcon("src/resources/images/down1.png").getImage();
+        pacman3down = new ImageIcon("src/resources/images/down2.png").getImage();
+        pacman4down = new ImageIcon("src/resources/images/down3.png").getImage();
+        pacman2left = new ImageIcon("src/resources/images/left1.png").getImage();
+        pacman3left = new ImageIcon("src/resources/images/left2.png").getImage();
+        pacman4left = new ImageIcon("src/resources/images/left3.png").getImage();
+        pacman2right = new ImageIcon("src/resources/images/right1.png").getImage();
+        pacman3right = new ImageIcon("src/resources/images/right2.png").getImage();
+        pacman4right = new ImageIcon("src/resources/images/right3.png").getImage();
+
+    }
+
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        doDrawing(g);
+    }
+
+    private void doDrawing(Graphics g) {
+        Graphics2D g2d = (Graphics2D) g;
+
+        g2d.setColor(Color.black);
+        g2d.fillRect(0, 0, d.width, d.height);
+
+        drawMaze(g2d);
+        drawScore(g2d);
+        doAnim();
+
+        if (inGame) {
+            playGame(g2d);
+        } else {
+            showIntroScreen(g2d);
+        }
+
+        g2d.drawImage(ii, 5, 5, this);
+        Toolkit.getDefaultToolkit().sync();
+        g2d.dispose();
+    }
 }
