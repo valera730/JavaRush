@@ -580,5 +580,10 @@ public class Board extends JPanel implements ActionListener {
                 req_dy = 0;
             }
         }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            repaint();
+        }
     }
 }
