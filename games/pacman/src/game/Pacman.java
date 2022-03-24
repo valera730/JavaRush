@@ -15,4 +15,11 @@ public class Pacman extends JFrame {
         setSize(380, 420);
         setLocationRelativeTo(null);
     }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> {
+            var ex = new Pacman();
+            ex.setVisible(true);
+        });
+    }
 }
