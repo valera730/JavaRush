@@ -42,4 +42,21 @@ private int xdir;
             setYDir(1);
         }
     }
+
+    private void resetState() {
+        x = Commons.INIT_BALL_X;
+        y = Commons.INIT_BALL_Y;
+    }
+
+    void setXDir(int x) {
+        xdir = x;
+    }
+
+    void setYDir(int y) {
+        ydir = y;
+    }
+
+    int getYDir() {
+        return ydir;
+    }
 }
