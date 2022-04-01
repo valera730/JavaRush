@@ -17,4 +17,22 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class Board extends JPanel {
+    private Timer timer;
+    private String message = "Game Over";
+    private Ball ball;
+    private Paddle paddle;
+    private Brick[] bricks;
+    private boolean inGame = true;
+
+    public Board() {
+        initBoard();
+    }
+
+    private void initBoard() {
+        addKeyListener(new TAdapter());
+        setFocusable(true);
+        setPreferredSize(new Dimension(Commons.WIDTH, Commons.HEIGHT));
+
+        gameInit();
+    }
 }
