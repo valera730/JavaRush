@@ -35,4 +35,23 @@ public class Board extends JPanel {
 
         gameInit();
     }
+
+    private void gameInit() {
+        bricks = new Brick[Commons.N_OF_BRICKS];
+
+        ball = new Ball();
+        paddle = new Paddle();
+
+        int k = 0;
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 6; j++) {
+                bricks[k] = new Brick(j * 40 + 30, i * 10 + 50);
+                k++;
+            }
+        }
+
+        timer = new Timer(Commons.PERIOD, new GameCycle());
+        timer.start();
+    }
 }
