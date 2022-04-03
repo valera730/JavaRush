@@ -54,4 +54,23 @@ public class Board extends JPanel {
         timer = new Timer(Commons.PERIOD, new GameCycle());
         timer.start();
     }
+
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        var g2d = (Graphics2D) g;
+
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+        g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
+
+        if (inGame) {
+            drawObjects(g2d);
+        } else {
+            gameFinished(g2d);
+        }
+
+        Toolkit.getDefaultToolkit().sync();
+    }
 }
