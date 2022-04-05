@@ -73,4 +73,24 @@ public class Board extends JPanel {
 
         Toolkit.getDefaultToolkit().sync();
     }
+
+    private void drawObjects(Graphics2D g2d) {
+        g2d.drawImage(ball.getImage(), ball.getX(), ball.getY(), ball.getImageWidth(), ball.getImageHeight(), this);
+        g2d.drawImage(paddle.getImage(), paddle.getX(), paddle.getY(), paddle.getImageWidth(), paddle.getImageHeight(), this);
+
+        for (int i = 0; i < Commons.N_OF_BRICKS; i++) {
+            if (!bricks[i].isDestroyed()) {
+                g2d.drawImage(bricks[i].getImage(), bricks[i].getX(), bricks[i].getY(), bricks[i].getImageWidth(), bricks[i].getImageHeight(), this);
+            }
+        }
+    }
+
+    private void gameFinished(Graphics2D g2d) {
+        var font = new Font("Verdana", Font.BOLD, 18);
+        FontMetrics fontMetrics = this.getFontMetrics(font);
+
+        g2d.setColor(Color.BLACK);
+        g2d.setFont(font);
+        g2d.drawString(message, (Commons.WIDTH - fontMetrics.stringWidth(message)) / 2, Commons.WIDTH / 2);
+    }
 }
