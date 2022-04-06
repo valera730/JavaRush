@@ -93,4 +93,23 @@ public class Board extends JPanel {
         g2d.setFont(font);
         g2d.drawString(message, (Commons.WIDTH - fontMetrics.stringWidth(message)) / 2, Commons.WIDTH / 2);
     }
+
+    private class TAdapter extends KeyAdapter {
+        @Override
+        public void keyReleased(KeyEvent e) {
+            paddle.keyReleased(e);
+        }
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+            paddle.keyPressed(e);
+        }
+    }
+
+    private class GameCycle implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            doGameCycle();
+        }
+    }
 }
