@@ -112,4 +112,16 @@ public class Board extends JPanel {
             doGameCycle();
         }
     }
+
+    private void doGameCycle() {
+        ball.move();
+        paddle.move();
+        checkCollision();
+        repaint();
+    }
+
+    private void stopGame() {
+        inGame = false;
+        timer.stop();
+    }
 }
