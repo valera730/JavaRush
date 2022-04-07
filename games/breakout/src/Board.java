@@ -124,4 +124,86 @@ public class Board extends JPanel {
         inGame = false;
         timer.stop();
     }
+
+    private void checkCollision() {
+        if (ball.getRect().getMaxY() > Commons.BOTTOM_EDGE) {
+            stopGame();
+        }
+
+        for (int i = 0, j = 0; i < Commons.N_OF_BRICKS; i++) {
+            if (bricks[i].isDestroyed()) {
+                j++;
+            }
+
+            if (j == Commons.N_OF_BRICKS) {
+                message = "Victory";
+                stopGame();
+            }
+        }
+
+        if ((ball.getRect()).intersects(paddle.getRect())) {
+            int paddleLPos = (int) paddle.getRect().getMinX();
+            int ballLPos = (int) ball.getRect().getMinX();
+
+            int first = paddleLPos + 8;
+            int second = paddleLPos + 16;
+            int third = paddleLPos + 24;
+            int fourth = paddleLPos + 32;
+
+            if (ballLPos < first) {
+                ball.setXDir(-1);
+                ball.setYDir(-1);
+            }
+
+            if (ballLPos >= first && ballLPos < second) {
+                ball.setXDir(-1);
+                ball.setYDir(-1 * ball.getYDir());
+            }
+
+            if (ballLPos >= second && ballLPos < third) {
+                ball.setXDir(0);
+                ball.setYDir(-1);
+            }
+
+            if (ballLPos >= third && ballLPos < fourth) {
+                ball.setXDir(1);
+                ball.setYDir(-1 * ball.getYDir());
+            }
+
+            if (ballLPos > fourth) {
+                ball.setXDir(1);
+                ball.setYDir(-1);
+            }
+        }
+
+        for (int i = 0; i < Commons.N_OF_BRICKS; i++) {
+            if ((ball.getRect()).intersects(bricks[i].getRect())) {
+                int ballLeft = (int) ball.getRect().getMinX();
+                int ballHeight = (int) ball.getRect().getHeight();
+                int ballWidth = (int) ball.getRect().getWidth();
+                int ballTop = (int) ball.getRect().getMinY();
+
+                var pointRight = new Point(ballLeft + ballWidth + 1, ballTop);
+                var pointLeft = new Point(ballLeft - 1, ballTop);
+                var pointTop = new Point(ballLeft, ballTop - 1);
+                var pointBottom = new Point(ballLeft, ballTop + ballHeight + 1);
+
+                if (!bricks[i].isDestroyed()) {
+                    if (bricks[i].getRect().contains(pointRight)) {
+                        ball.setXDir(-1);
+                    } else if (bricks[i].getRect().contains(pointLeft)) {
+                        ball.setXDir(1);
+                    }
+
+                    if (bricks[i].getRect().contains(pointTop)) {
+                        ball.setYDir(1);
+                    } else if (bricks[i].getRect().contains(pointBottom)) {
+                        ball.setYDir(-1);
+                    }
+
+                    bricks[i].setDestroyed(true);
+                }
+            }
+        }
+    }
 }
