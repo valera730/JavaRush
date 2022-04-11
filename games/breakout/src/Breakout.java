@@ -17,4 +17,11 @@ public class Breakout extends JFrame {
         setResizable(false);
         pack();
     }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> {
+            var game = new Breakout();
+            game.setVisible(true);
+        });
+    }
 }
