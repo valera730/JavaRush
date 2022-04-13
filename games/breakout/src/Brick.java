@@ -18,4 +18,17 @@ public class Brick extends Sprite {
         loadImage();
         getImageDimensions();
     }
+
+    private void loadImage() {
+        var ii = new ImageIcon("src/resources/brick.png");
+        image = ii.getImage();        
+    }
+
+    boolean isDestroyed() {
+        return destroyed;
+    }
+
+    void setDestroyed(boolean val) {
+        destroyed = val;
+    }
 }
