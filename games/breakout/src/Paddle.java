@@ -16,4 +16,21 @@ public class Paddle extends Sprite  {
 
         resetState();
     }
+
+    private void loadImage() {
+        var ii = new ImageIcon("src/resources/paddle.png");
+        image = ii.getImage();        
+    }    
+
+    void move() {
+        x += dx;
+
+        if (x <= 0) {
+            x = 0;
+        }
+
+        if (x >= Commons.WIDTH - imageWidth) {
+            x = Commons.WIDTH - imageWidth;
+        }
+    }
 }
