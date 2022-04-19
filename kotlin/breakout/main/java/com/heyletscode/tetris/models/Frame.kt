@@ -1,6 +1,6 @@
-package com.example.myapplication.models
+package com.heyletscode.tetris.models
 
-import com.example.myapplication.helpers.array2dOfByte
+import com.heyletscode.tetris.helpers.array2dOfByte
 
 class Frame(private val width: Int) {
     //width-ширина генерируемого фрейма (число столбцов в байтовом массиве фрейма)

@@ -1,4 +1,4 @@
-package com.example.myapplication.helpers
+package com.heyletscode.tetris.helpers
 
 //генерирует и возвращает новый массив с указанными свойствами
 //sizeOuter-номер строки создаваемого массива

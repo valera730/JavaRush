@@ -1,4 +1,5 @@
-package com.example.myapplication.storage
+//package com.example.myapplication.storage
+package com.heyletscode.tetris.storage
 
 import android.content.Context
 import android.content.SharedPreferences

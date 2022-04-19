@@ -1,4 +1,4 @@
-package com.example.myapplication.models
+package com.heyletscode.tetris.models
 
 import java.lang.IllegalArgumentException
 

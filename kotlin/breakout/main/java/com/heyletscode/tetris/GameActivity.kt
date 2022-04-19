@@ -1,10 +1,10 @@
-package com.example.myapplication
+package com.heyletscode.tetris
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import com.example.myapplication.storage.AppPreferences
+import com.heyletscode.tetris.storage.AppPreferences
 
 class GameActivity : AppCompatActivity() {
     var tvHighScore: TextView? = null

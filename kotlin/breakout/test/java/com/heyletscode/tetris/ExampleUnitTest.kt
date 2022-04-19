@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.heyletscode.tetris
 
 import org.junit.Test
 
