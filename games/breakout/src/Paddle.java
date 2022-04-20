@@ -33,4 +33,28 @@ public class Paddle extends Sprite  {
             x = Commons.WIDTH - imageWidth;
         }
     }
+
+    void keyPressed(KeyEvent e) {
+        int key = e.getKeyCode();
+
+        if (key == KeyEvent.VK_LEFT) {
+            dx = -1;
+        }
+
+        if (key == KeyEvent.VK_RIGHT) {
+            dx = 1;
+        }
+    }
+
+    void keyReleased(KeyEvent e) {
+        int key = e.getKeyCode();
+
+        if (key == KeyEvent.VK_LEFT) {
+            dx = 0;
+        }
+
+        if (key == KeyEvent.VK_RIGHT) {
+            dx = 0;
+        }
+    }
 }
