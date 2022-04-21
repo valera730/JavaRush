@@ -57,4 +57,9 @@ public class Paddle extends Sprite  {
             dx = 0;
         }
     }
+
+    private void resetState() {
+        x = Commons.INIT_PADDLE_X;
+        y = Commons.INIT_PADDLE_Y;
+    }
 }
