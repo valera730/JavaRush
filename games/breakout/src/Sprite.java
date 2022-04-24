@@ -17,4 +17,16 @@ public class Sprite {
     int getX() {
         return x;
     }
+
+    protected void setY(int y) {
+        this.y = y;
+    }
+
+    int getY() {
+        return y;
+    }
+
+    int getImageWidth() {
+        return imageWidth;
+    }
 }
