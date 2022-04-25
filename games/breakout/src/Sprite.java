@@ -29,4 +29,12 @@ public class Sprite {
     int getImageWidth() {
         return imageWidth;
     }
+
+     int getImageHeight() {
+        return imageHeight;
+    }
+
+    Image getImage() {
+        return image;
+    }
 }
