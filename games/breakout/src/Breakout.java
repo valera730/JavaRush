@@ -1,4 +1,4 @@
-package com.src;
+package com.breakout;
 
 import javax.swing.JFrame;
 import java.awt.EventQueue;

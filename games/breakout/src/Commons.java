@@ -1,4 +1,4 @@
-package com.src;
+package com.breakout;
 
 public interface Commons {
     int WIDTH = 300;

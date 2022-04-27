@@ -1,4 +1,4 @@
-package com.src;
+package com.breakout;
 
 import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
