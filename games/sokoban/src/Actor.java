@@ -24,4 +24,20 @@ public class Actor {
     public int x() {
         return x;
     }
+
+    public int y() {
+        return y;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public boolean isLeftCollision(Actor actor) {
+        return x() - SPACE == actor.x() && y() == actor.y();
+    }
 }
