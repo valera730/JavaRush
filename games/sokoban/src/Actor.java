@@ -40,4 +40,16 @@ public class Actor {
     public boolean isLeftCollision(Actor actor) {
         return x() - SPACE == actor.x() && y() == actor.y();
     }
+
+    public boolean isRightCollision(Actor actor) {
+        return x() + SPACE == actor.x() && y() == actor.y();
+    }
+
+    public boolean isTopCollision(Actor actor) {
+        return y() - SPACE == actor.y() && x() == actor.x();
+    }
+
+    public boolean isBottomCollision(Actor actor) {
+        return y() + SPACE == actor.y() && x() == actor.x();
+    }
 }
