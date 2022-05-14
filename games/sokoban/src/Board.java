@@ -25,5 +25,20 @@ public class Board extends JPanel {
     
     private boolean isCompleted = false;
 
-    
+    private String level
+            = "    ######\n"
+            + "    ##   #\n"
+            + "    ##$  #\n"
+            + "  ####  $##\n"
+            + "  ##  $ $ #\n"
+            + "#### # ## #   ######\n"
+            + "##   # ## #####  ..#\n"
+            + "## $  $          ..#\n"
+            + "###### ### #@##  ..#\n"
+            + "    ##     #########\n"
+            + "    ########\n";
+
+    public Board() {
+        initBoard();
+    }
 }
