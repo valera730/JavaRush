@@ -41,4 +41,14 @@ public class Board extends JPanel {
     public Board() {
         initBoard();
     }
+
+    private void initBoard() {
+        addKeyListener(new TAdapter());
+        setFocusable(true);
+        initWorld();
+    }
+
+    public int getBoardWidth() {
+        return this.w;
+    }
 }
