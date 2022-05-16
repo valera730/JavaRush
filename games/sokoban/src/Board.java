@@ -51,4 +51,22 @@ public class Board extends JPanel {
     public int getBoardWidth() {
         return this.w;
     }
+
+    public int getBoardHeight() {
+        return this.h;
+    }
+
+    private void initWorld() {
+        walls = new ArrayList<>();
+        baggs = new ArrayList<>();
+        areas = new ArrayList<>();
+
+        int x = OFFSET;
+        int y = OFFSET;
+
+        Wall wall;
+        Baggage b;
+        Area a;
+
+    }
 }
