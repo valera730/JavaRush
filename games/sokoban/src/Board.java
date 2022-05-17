@@ -68,5 +68,52 @@ public class Board extends JPanel {
         Baggage b;
         Area a;
 
+        for (int i = 0; i < level.length(); i++) {
+            char item = level.charAt(i);
+
+            switch (item) {
+                case '\n':
+                    y += SPACE;
+
+                    if (this.w < x) {
+                        this.w = x;
+                    }
+
+                    x = OFFSET;
+                    break;
+
+                case '#':
+                    wall = new Wall(x, y);
+                    walls.add(wall);
+                    x += SPACE;
+                    break;
+
+                case '$':
+                    b = new Baggage(x, y);
+                    baggs.add(b);
+                    x += SPACE;
+                    break;
+
+                case '.':
+                    a = new Area(x, y);
+                    areas.add(a);
+                    x += SPACE;
+                    break;
+
+                case '@':
+                    soko = new Player(x, y);
+                    x += SPACE;
+                    break;
+
+                case ' ':
+                    x += SPACE;
+                    break;
+
+                default:
+                    break;
+            }
+
+            h = y;
+        }
     }
 }
