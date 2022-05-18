@@ -116,4 +116,30 @@ public class Board extends JPanel {
             h = y;
         }
     }
-}
+
+    private void buildWorld(Graphics g) {
+        g.setColor(new Color(250, 240, 170));
+        g.fillRect(0, 0, this.getWidth(), this.getHeight());
+
+        ArrayList<Actor> world = new ArrayList<>();
+
+        world.addAll(walls);
+        world.addAll(areas);
+        world.addAll(baggs);
+        world.add(soko);
+
+        for (int i = 0; i < world.size(); i++) {
+            Actor item = world.get(i);
+
+            if (item instanceof Player || item instanceof Baggage) {
+                g.drawImage(item.getImage(), item.x() + 2, item.y() + 2, this);
+            } else {
+                g.drawImage(item.getImage(), item.x(), item.y(), this);
+            }
+
+            if (isCompleted) {
+                g.setColor(new Color(0, 0, 0));
+                g.drawString("Completed", 25, 20);
+            }
+        }
+    }
