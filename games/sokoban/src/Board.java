@@ -143,3 +143,86 @@ public class Board extends JPanel {
             }
         }
     }
+
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        buildWorld(g);
+    }
+
+    private class TAdapter extends KeyAdapter {
+        @Override
+        public void keyPressed(KeyEvent e) {
+            if (isCompleted) {
+                return;
+            }
+
+            int key = e.getKeyCode();
+
+            switch (key) {
+                case KeyEvent.VK_LEFT:
+                    if (checkWallCollision(soko,
+                            LEFT_COLLISION)) {
+                        return;
+                    }
+                    
+                    if (checkBagCollision(LEFT_COLLISION)) {
+                        return;
+                    }
+                    
+                    soko.move(-SPACE, 0);
+                    
+                    break;
+                    
+                case KeyEvent.VK_RIGHT:
+                    if (checkWallCollision(soko, RIGHT_COLLISION)) {
+                        return;
+                    }
+                    
+                    if (checkBagCollision(RIGHT_COLLISION)) {
+                        return;
+                    }
+                    
+                    soko.move(SPACE, 0);
+                    
+                    break;
+                    
+                case KeyEvent.VK_UP:
+                    if (checkWallCollision(soko, TOP_COLLISION)) {
+                        return;
+                    }
+                    
+                    if (checkBagCollision(TOP_COLLISION)) {
+                        return;
+                    }
+                    
+                    soko.move(0, -SPACE);
+                    
+                    break;
+                    
+                case KeyEvent.VK_DOWN:
+                    if (checkWallCollision(soko, BOTTOM_COLLISION)) {
+                        return;
+                    }
+                    
+                    if (checkBagCollision(BOTTOM_COLLISION)) {
+                        return;
+                    }
+                    
+                    soko.move(0, SPACE);
+                    
+                    break;
+                    
+                case KeyEvent.VK_R:
+                    restartLevel();
+                    
+                    break;
+                    
+                default:
+                    break;
+            }
+
+            repaint();
+        }
+    }
