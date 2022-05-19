@@ -226,3 +226,52 @@ public class Board extends JPanel {
             repaint();
         }
     }
+
+    private boolean checkWallCollision(Actor actor, int type) {
+        switch (type) {
+            case LEFT_COLLISION:
+                for (int i = 0; i < walls.size(); i++) {
+                    Wall wall = walls.get(i);
+                    
+                    if (actor.isLeftCollision(wall))
+                        return true;
+                }
+                
+                return false;
+                
+            case RIGHT_COLLISION:
+                for (int i = 0; i < walls.size(); i++) {
+                    Wall wall = walls.get(i);
+                    
+                    if (actor.isRightCollision(wall))
+                        return true;
+                }
+                
+                return false;
+                
+            case TOP_COLLISION:
+                for (int i = 0; i < walls.size(); i++) {
+                    Wall wall = walls.get(i);
+                    
+                    if (actor.isTopCollision(wall))
+                        return true;
+                }
+                
+                return false;
+                
+            case BOTTOM_COLLISION:
+                for (int i = 0; i < walls.size(); i++) {
+                    Wall wall = walls.get(i);
+                    
+                    if (actor.isBottomCollision(wall))
+                        return true;
+                }
+                
+                return false;
+                
+            default:
+                break;
+        }
+        
+        return false;
+    }
