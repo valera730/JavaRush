@@ -275,3 +275,8 @@ public class Board extends JPanel {
         
         return false;
     }
+
+       private boolean checkBagCollision(int type) {
+        switch (type) {
+        }
+       }
