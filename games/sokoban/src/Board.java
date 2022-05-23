@@ -279,15 +279,11 @@ public class Board extends JPanel {
        private boolean checkBagCollision(int type) {
         switch (type) {
             case LEFT_COLLISION:
-                
                 for (int i = 0; i < baggs.size(); i++) {
-
                     Baggage bag = baggs.get(i);
 
                     if (soko.isLeftCollision(bag)) {
-
                         for (int j = 0; j < baggs.size(); j++) {
-                            
                             Baggage item = baggs.get(j);
                             
                             if (!bag.equals(item)) {
@@ -307,6 +303,31 @@ public class Board extends JPanel {
                     }
                 }
                 
+                return false;
+
+            case RIGHT_COLLISION:                
+                for (int i = 0; i < baggs.size(); i++) {
+                    Baggage bag = baggs.get(i);
+                    
+                    if (soko.isRightCollision(bag)) {                        
+                        for (int j = 0; j < baggs.size(); j++) {
+                            Baggage item = baggs.get(j);
+                            
+                            if (!bag.equals(item)) {
+                                if (bag.isRightCollision(item)) {
+                                    return true;
+                                }
+                            }
+                            
+                            if (checkWallCollision(bag, RIGHT_COLLISION)) {
+                                return true;
+                            }
+                        }
+                        
+                        bag.move(SPACE, 0);
+                        isCompleted();
+                    }
+                }
                 return false;
             }
        }
