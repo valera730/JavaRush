@@ -4,11 +4,13 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserType;
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+//use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class RegistrationController extends AbstractController
 {
@@ -19,7 +21,9 @@ class RegistrationController extends AbstractController
         $this->passwordEncoder = $passwordEncoder;
     }
 
-    #[Route("/registration", name: "registration")]
+    /**
+     * @Route("/registration", name="registration")
+     */
     public function index(Request $request): Response
     {
         $user = new User();
@@ -28,7 +32,7 @@ class RegistrationController extends AbstractController
 
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+        if($form->isSubmitted() && $form->isValid()) {
             // Encode the new users password
             $user->setPassword($this->passwordEncoder->encodePassword($user, $user->getPassword()));
 
@@ -45,6 +49,7 @@ class RegistrationController extends AbstractController
 
         return $this->render('registration/index.html.twig', [
             'form' => $form->createView(),
+            //'controller_name' => 'RegistrationController',
         ]);
     }
 }
