@@ -329,5 +329,31 @@ public class Board extends JPanel {
                     }
                 }
                 return false;
+
+            case TOP_COLLISION:                
+                for (int i = 0; i < baggs.size(); i++) {
+                    Baggage bag = baggs.get(i);
+                    
+                    if (soko.isTopCollision(bag)) {                        
+                        for (int j = 0; j < baggs.size(); j++) {
+                            Baggage item = baggs.get(j);
+
+                            if (!bag.equals(item)) {                                
+                                if (bag.isTopCollision(item)) {
+                                    return true;
+                                }
+                            }
+                            
+                            if (checkWallCollision(bag, TOP_COLLISION)) {
+                                return true;
+                            }
+                        }
+                        
+                        bag.move(0, -SPACE);
+                        isCompleted();
+                    }
+                }
+
+                return false;
             }
        }
