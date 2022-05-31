@@ -388,3 +388,25 @@ public class Board extends JPanel {
 
         return false;
     }
+
+    public void isCompleted() {
+        int nOfBags = baggs.size();
+        int finishedBags = 0;
+
+        for (int i = 0; i < nOfBags; i++) {
+            Baggage bag = baggs.get(i);
+            
+            for (int j = 0; j < nOfBags; j++) {
+                Area area =  areas.get(j);
+                
+                if (bag.x() == area.x() && bag.y() == area.y()) {
+                    finishedBags += 1;
+                }
+            }
+        }
+
+        if (finishedBags == nOfBags) {
+            isCompleted = true;
+            repaint();
+        }
+    }
