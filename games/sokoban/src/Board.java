@@ -410,3 +410,15 @@ public class Board extends JPanel {
             repaint();
         }
     }
+    private void restartLevel() {
+        areas.clear();
+        baggs.clear();
+        walls.clear();
+
+        initWorld();
+
+        if (isCompleted) {
+            isCompleted = false;
+        }
+    }
+}
