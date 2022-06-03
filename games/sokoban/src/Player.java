@@ -11,5 +11,16 @@ public class Player extends Actor {
     }
 
     private void initPlayer() {
+        ImageIcon iicon = new ImageIcon("src/resources/sokoban.png");
+        Image image = iicon.getImage();
+        setImage(image);
+    }
+
+    public void move(int x, int y) {
+        int dx = x() + x;
+        int dy = y() + y;
+        
+        setX(dx);
+        setY(dy);
     }
 }
