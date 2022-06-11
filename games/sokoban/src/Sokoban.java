@@ -21,4 +21,11 @@ public class Sokoban extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> {
+            Sokoban game = new Sokoban();
+            game.setVisible(true);
+        });
+    }
 }
