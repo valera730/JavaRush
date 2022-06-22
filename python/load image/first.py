@@ -1,6 +1,6 @@
-import urllib
+from urllib.request import urlopen
 
-resource = urllib.urlopen(img)
+resource = urlopen(img)
 out = open("...\img.jpg", 'wb')
 out.write(resource.read())
 out.close()
