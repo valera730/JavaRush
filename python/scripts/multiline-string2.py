@@ -1,5 +1,5 @@
 string = ("Multiple \n"
         	"code \n"
-        	"string")
+        	" string")
 
 print(string)
