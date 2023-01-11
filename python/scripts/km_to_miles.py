@@ -1,6 +1,6 @@
 kilometers = float(input("Enter value in kilometers: "))
 
-conv_fac = 0.621371
+conv_fac = 0.371421
 
 miles = kilometers * conv_fac
-print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
+print('%0.2f kilometers equals to %0.2f miles' %(kilometers,miles))
