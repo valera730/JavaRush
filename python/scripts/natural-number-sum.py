@@ -1,4 +1,4 @@
-num = 16
+num = 24
 
 if num < 0:
    print("Enter positive number")
@@ -7,4 +7,4 @@ else:
    while(num > 0):
        sum += num
        num -= 1
-   print("The sum is", sum)
+   print("Sum = ", sum)
