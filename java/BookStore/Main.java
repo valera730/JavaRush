@@ -13,10 +13,6 @@ public class Main {
         System.out.println(getBookById(2).getPrice());
 
         System.out.println(getCountSoldBooks());
-        System.out.println(getSummSoldedBooksInOneOrder(1));
-        System.out.println(getSummSoldedBooksInOneOrder(2));
-        System.out.println(getSummSoldedBooksInOneOrder(3));
-        System.out.println(getSummSoldedBooksInOneOrder(4));
     }
 
     //получить сумму проданных книг в одном заказе
