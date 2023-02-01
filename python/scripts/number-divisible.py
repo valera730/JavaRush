@@ -1,5 +1,5 @@
-my_list = [13, 64, 57, 41, 105, 325, 121,]
+my_list = [12, 63, 58, 42, 107, 327, 123, 129]
 
-result = list(filter(lambda x: (x % 13 == 0), my_list))
+result = list(filter(lambda x: (x % 12 == 0), my_list))
 
-print("Numbers divisible by 13 are", result)
+print("Numbers divisible by 12 are: ", result)
