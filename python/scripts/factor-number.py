@@ -1,9 +1,9 @@
 def print_factors(x):
-   print("The factors of",x,"are:")
+   print("Factors of ",x,": ")
    for i in range(1, x + 1):
        if x % i == 0:
            print(i)
 
-num = 320
+num = 640
 
 print_factors(num)
