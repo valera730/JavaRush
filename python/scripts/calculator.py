@@ -11,11 +11,11 @@ def divide(x, y):
     return x / y
 
 
-print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
+print("Select operation: ")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
 
 while True:
-    choice = input("Enter your choice(1/2/3/4): ")
+    choice = input("Enter your choice (1/2/3/4): ")
