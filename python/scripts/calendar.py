@@ -1,6 +1,6 @@
 import calendar
 
-yy = 2014  #год
-mm = 11    #месяц
+yy = 2023
+mm = 2
 
 print(calendar.month(yy, mm))
