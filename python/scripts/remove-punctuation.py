@@ -1,6 +1,6 @@
 punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
-my_str = "Hello!!!, he said ---and went."
+my_str = "Hello, world!"
 
 no_punct = ""
 for char in my_str:
