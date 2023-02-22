@@ -1,4 +1,4 @@
-my_str = "This is some string"
+my_str = "Python test string"
 
 words = [word.lower() for word in my_str.split()]
 
