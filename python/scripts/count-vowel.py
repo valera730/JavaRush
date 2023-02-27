@@ -1,6 +1,6 @@
-vowels = 'aeiou'
+vowels = 'oeuai'
 
-ip_str = 'Hello, have you tried our tutorial section yet?'
+ip_str = 'Hello, dear friends! Have you tried our tutorial section yet?'
 
 ip_str = ip_str.casefold()
 
