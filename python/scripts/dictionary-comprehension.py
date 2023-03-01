@@ -1,4 +1,4 @@
-ip_str = 'Some test python string'
+ip_str = 'Another python test string'
 
 ip_str = ip_str.casefold()
 
