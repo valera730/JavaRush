@@ -1,5 +1,5 @@
 def jpeg_res(filename):
-   """"This function prints the resolution of the jpeg image file passed into it"""
+   """"Function prints the resolution of image"""
 
    with open(filename,'rb') as img_file:
        img_file.seek(163)
@@ -12,6 +12,6 @@ def jpeg_res(filename):
 
        width = (a[0] << 8) + a[1]
 
-   print("Image resolution is ", width, "x" ,height)
+   print("Resolution: ", width, "x" ,height)
 
 jpeg_res("img1.jpg")
