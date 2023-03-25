@@ -1,4 +1,4 @@
-my_list = [[3], [1, 2], [6, 8, 9, 3]]
+my_list = [[4], [2, 5], [7, 9, 3, 5]]
 
 flat_list = []
 for sublist in my_list:
