@@ -1,6 +1,6 @@
 import itertools
 
-my_list = [[5], [4, 6], [1, 2, 3, 6]]
+my_list = [[7], [5, 8], [2, 4, 3, 5]]
 
 flat_list = list(itertools.chain(*my_list))
 print(flat_list)
