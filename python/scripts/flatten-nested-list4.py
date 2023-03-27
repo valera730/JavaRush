@@ -1,4 +1,4 @@
-my_list = [[3], [4, 6], [7, 1, 2, 3]]
+my_list = [[5], [6, 7], [4, 3, 2, 1]]
 
 flat_list = sum(my_list, [])
 print(flat_list)
