@@ -1,4 +1,4 @@
 from functools import reduce
 
-my_list = [[4], [5, 6], [1, 2, 3, 9]]
+my_list = [[5], [3, 5], [2, 3, 4, 7]]
 print(reduce(lambda x, y: x+y, my_list))
