@@ -1,3 +1,3 @@
-my_list = [7, 3, 1, 2, 6]
+my_list = [8, 4, 2, 3, 7]
 
 print(my_list[:2])
