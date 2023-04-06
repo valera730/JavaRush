@@ -1,4 +1,4 @@
-dt = {'a': 'juice', 'b': 'grill', 'c': 'corn'}
+dt = {'a': 'php', 'b': 'java', 'c': 'python'}
 
 for key in dt:
     print(key, dt[key])
