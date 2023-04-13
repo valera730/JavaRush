@@ -1,3 +1,3 @@
-my_list = []
-if my_list == []:
+list3 = []
+if list3 == []:
     print("list is empty")
