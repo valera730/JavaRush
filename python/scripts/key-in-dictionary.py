@@ -1,4 +1,4 @@
-my_dict = {1: 'a', 2: 'b', 3: 'c'}
+my_dict = {1: 'c', 2: 'd', 3: 'b'}
 
 if 2 in my_dict:
-    print("present") 
+    print("exists") 
