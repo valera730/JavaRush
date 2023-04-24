@@ -1,4 +1,4 @@
-balance_str = "1300.5"
+balance_str = "2401.7"
 balance_float = float(balance_str)
 
 print(type(balance_float))
