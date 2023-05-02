@@ -1,4 +1,4 @@
-my_string = "Some string"
+my_string = "London is the capital of Great Britain"
 
 print(my_string[2:6])
 
