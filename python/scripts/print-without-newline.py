@@ -1,7 +1,7 @@
-print("Текст")
-print("без переноса строк")
+print("Text")
+print("without line break")
 
 print()
 
-print("Текст", end=" ")
-print("без переноса строк")
+print("Text", end=" ")
+print("without line break")
