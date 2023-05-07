@@ -1,2 +1,2 @@
-freq = ['a', 1, 'a', 4, 3, 2, 'a'].count('a')
+freq = ['b', 3, 'c', 7, 6, 4, 'b'].count('a')
 print(freq)
