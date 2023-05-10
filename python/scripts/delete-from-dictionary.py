@@ -1,5 +1,5 @@
-my_dict = {31: 'a', 21: 'b', 14: 'c'}
+my_dict = {15: 'b', 17: 'e', 12: 'f'}
 
-del my_dict[31]
+del my_dict[17]
 
 print(my_dict)
