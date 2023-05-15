@@ -1,5 +1,5 @@
-my_string = '''Multi 
-line
-code.'''
+my_string = '''Some 
+lines
+text.'''
 
 print(my_string)
