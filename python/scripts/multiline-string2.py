@@ -1,5 +1,5 @@
-string = ("Multiple \n"
-        	"code \n"
-        	" string")
+string = ("Some \n"
+        	" python \n"
+        	" code")
 
 print(string)
