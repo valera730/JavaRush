@@ -1,3 +1,3 @@
 from pathlib import Path
 
-print(Path('/category/filename.ext').stem)
+print(Path('/directory/file.ext').stem)
