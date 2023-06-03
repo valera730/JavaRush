@@ -3,10 +3,10 @@ from enum import Enum
 class Day(Enum):
     MONDAY = 1
     WEDNESDAY = 2
-    THURSDAY = 3
+    FRIDAY = 3
 
-print(Day.THURSDAY)
+print(Day.FRIDAY)
 
-print(Day.THURSDAY.name)
+print(Day.FRIDAY.name)
 
-print(Day.THURSDAY.value)
+print(Day.FRIDAY.value)
