@@ -1,12 +1,12 @@
 from enum import Enum
 
 class Day(Enum):
-    SUNDAY = 1
-    TUESDAY = 2
-    SATURDAY = 3
+    MONDAY = 1
+    WEDNESDAY = 2
+    THURSDAY = 3
 
-print(Day.SATURDAY)
+print(Day.THURSDAY)
 
-print(Day.SATURDAY.name)
+print(Day.THURSDAY.name)
 
-print(Day.SATURDAY.value)
+print(Day.THURSDAY.value)
