@@ -1,6 +1,6 @@
 def name():
-    n1 = "Peter"
-    n2 = "Norton"
+    n1 = "Bill"
+    n2 = "Gates"
 
     return {1:n1, 2:n2}
 
