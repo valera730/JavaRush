@@ -4,4 +4,4 @@ def file_len(fname):
             pass
     return i + 1
 
-print(file_len("filename.ext"))
+print(file_len("file.name"))
