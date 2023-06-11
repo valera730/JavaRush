@@ -1,5 +1,5 @@
 import os
 
 for file in os.listdir("catalog"):
-    if file.endswith(".txt"):
+    if file.endswith(".doc"):
         print(file)
