@@ -1,6 +1,6 @@
 import os
 
-for root, dirs, files in os.walk("catalog"):
+for root, dirs, files in os.walk("directory"):
     for file in files:
-        if file.endswith(".txt"):
+        if file.endswith(".jpg"):
             print(file)
