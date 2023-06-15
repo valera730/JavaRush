@@ -1,5 +1,5 @@
 import pathlib
 
-print(pathlib.Path("filename.ext").parent.absolute())
+print(pathlib.Path("file.name").parent.absolute())
 
 print(pathlib.Path().absolute())
