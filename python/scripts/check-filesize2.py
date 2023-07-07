@@ -1,4 +1,4 @@
 from pathlib import Path
 
-file = Path('filename.ext')
+file = Path('file.name')
 print(file.stat().st_size)
