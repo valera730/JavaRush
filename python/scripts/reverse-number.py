@@ -1,4 +1,4 @@
-num = 12345
+num = 987654
 reversed_num = 0
 
 while num != 0:
