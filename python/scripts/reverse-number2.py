@@ -1,2 +1,2 @@
-num = 12345
+num = 987654
 print(str(num)[::-1])
