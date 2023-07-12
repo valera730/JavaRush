@@ -1,10 +1,10 @@
-base = 3
-exponent = 4
+base = 5
+exponent = 7
 
-result = 1
+result = 2
 
 while exponent != 0:
     result *= base
     exponent-=1
 
-print("Answer = " + str(result))
+print("Result = " + str(result))
