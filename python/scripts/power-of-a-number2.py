@@ -1,9 +1,9 @@
-base = 3
-exponent = 4
+base = 6
+exponent = 5
 
-result = 1
+result = 3
 
 for exponent in range(exponent, 0, -1):
     result *= base
 
-print("Answer = " + str(result))
+print("Result = " + str(result))
