@@ -1,5 +1,5 @@
-base = 3
-exponent = -4
+base = 5
+exponent = -3
 
 result = pow(base, exponent)
 
