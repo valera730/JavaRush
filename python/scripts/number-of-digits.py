@@ -1,4 +1,4 @@
-num = 6597
+num = 987654321
 count = 0
 
 while num != 0:
