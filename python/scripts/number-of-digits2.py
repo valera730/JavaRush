@@ -1,2 +1,2 @@
-num = 123456
+num = 987654
 print(len(str(num)))
