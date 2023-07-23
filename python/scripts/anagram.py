@@ -1,5 +1,5 @@
-str1 = "study"
-str2 = "dusty"
+str1 = "dessert"
+str2 = "stressed"
 
 str1 = str1.lower()
 str2 = str2.lower()
