@@ -1,4 +1,4 @@
-my_string = "see you tomorrow."
+my_string = "my flight was delayed"
 
 cap_string = my_string.capitalize()
 
