@@ -1,7 +1,7 @@
 count = 0
 
-my_string = "Programmer"
-my_char = "r"
+my_string = "successfully"
+my_char = "s"
 
 for i in my_string:
     if i == my_char:
