@@ -1,6 +1,6 @@
 count = 0
 
-my_string = "unimaginatively"
+my_string = "incomprehensibility"
 my_char = "i"
 
 for i in my_string:
