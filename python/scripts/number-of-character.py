@@ -1,6 +1,6 @@
 count = 0
 
-my_string = "incomprehensibility"
+my_string = "Pseudopseudohypoparathyroidism"
 my_char = "i"
 
 for i in my_string:
