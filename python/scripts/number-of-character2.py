@@ -1,4 +1,4 @@
-my_string = "Antidisestablishmentarianism"
-my_char = "s"
+my_string = "Pneumonoultramicroscopicsilicovolcanoconiosis"
+my_char = "o"
 
 print(my_string.count(my_char))
