@@ -1,3 +1,3 @@
-list_1 = [3, 5, 3, 7, 9]
+list_1 = [8, 5, 4, 8, 8]
 
 print(list(set(list_1)))
