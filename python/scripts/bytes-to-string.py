@@ -1,1 +1,1 @@
-print(b'Some bytes \xE2\x9C\x85'.decode("utf-8"))
+print(b'Some text \xE2\x9C\x85'.decode("utf-8"))
