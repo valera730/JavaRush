@@ -1,1 +1,1 @@
-print(b'Sophisticated \xE2\x9C\x85'.decode("utf-8"))
+print(b'Hello, world! \xE2\x9C\x85'.decode("utf-8"))
