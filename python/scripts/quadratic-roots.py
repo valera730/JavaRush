@@ -1,8 +1,8 @@
 import cmath
 
-a = 7
-b = 5
-c = 12
+a = 9
+b = 3
+c = 11
 
 d = (b**2) - (4*a*c)
 
