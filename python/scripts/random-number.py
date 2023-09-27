@@ -1,3 +1,3 @@
 import random
 
-print(random.randint(0,7))
+print(random.randint(0,5))
