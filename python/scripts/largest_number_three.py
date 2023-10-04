@@ -1,6 +1,6 @@
-num1 = 8
-num2 = 11
-num3 = 17
+num1 = 5
+num2 = 9
+num3 = 12
 
 if (num1 >= num2) and (num1 >= num3):
    largest = num1
