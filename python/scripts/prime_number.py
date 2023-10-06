@@ -1,4 +1,4 @@
-num = 17
+num = 13
 
 flag = False
 
