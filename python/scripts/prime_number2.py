@@ -1,4 +1,4 @@
-num = 123
+num = 34
 
 if num == 1:
     print(num, "not a prime number")
