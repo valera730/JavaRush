@@ -1,4 +1,4 @@
-num = 5
+num = 8
 
 factorial = 1
 if num < 0:
