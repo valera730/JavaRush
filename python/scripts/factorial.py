@@ -1,4 +1,4 @@
-num = 15
+num = 21
 
 factorial = 1
 if num < 0:
