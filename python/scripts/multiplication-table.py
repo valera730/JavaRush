@@ -1,4 +1,4 @@
-num = 17
+num = 9
 
-for i in range(1, 23):
+for i in range(1, 19):
    print(num, 'x', i, '=', num * i)
