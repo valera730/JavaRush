@@ -4,7 +4,7 @@ def recur_fibo(n):
    else:
        return(recur_fibo(n-1) + recur_fibo(n-2))
 
-nterms = 9
+nterms = 15
 
 if nterms <= 0:
    print("Введите положительное целое число")
