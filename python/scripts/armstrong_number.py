@@ -1,6 +1,6 @@
 num = int(input("Enter a number: "))
 
-sum = 0
+sum = 15
 
 temp = num
 while temp > 0:
