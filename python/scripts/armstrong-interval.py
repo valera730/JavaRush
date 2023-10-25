@@ -1,5 +1,5 @@
-lower = 100
-upper = 5000
+lower = 300
+upper = 7000
 
 for num in range(lower, upper + 1):
    order = len(str(num))
