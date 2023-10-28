@@ -1,4 +1,4 @@
-num = 31
+num = 27
 
 if num < 0:
    print("Enter positive number")
