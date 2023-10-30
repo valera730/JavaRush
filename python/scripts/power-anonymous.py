@@ -1,4 +1,4 @@
-terms = 12
+terms = 15
 
 result = list(map(lambda x: 2 ** x, range(terms)))
 
