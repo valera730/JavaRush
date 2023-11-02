@@ -1,4 +1,4 @@
-my_list = [11, 37, 49, 53, 98, 129, 99, 321]
+my_list = [37, 24, 52, 17, 67, 120, 87, 320]
 
 result = list(filter(lambda x: (x % 12 == 0), my_list))
 
