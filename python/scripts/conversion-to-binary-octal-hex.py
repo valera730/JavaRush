@@ -1,4 +1,4 @@
-dec = 123
+dec = 345
 
 print("Decimal value of", dec, "is:")
 print(bin(dec), "in binary.")
