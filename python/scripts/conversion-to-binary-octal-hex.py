@@ -1,4 +1,4 @@
-dec = 9735
+dec = 7654
 
 print("Decimal value of", dec, "is:")
 print(bin(dec), "in binary.")
