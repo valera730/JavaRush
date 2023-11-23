@@ -12,7 +12,7 @@ def compute_lcm(x, y):
 
    return lcm
 
-num1 = 62
-num2 = 18
+num1 = 74
+num2 = 11
 
 print("L.C.M.: ", compute_lcm(num1, num2))
