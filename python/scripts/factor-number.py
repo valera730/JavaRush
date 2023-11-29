@@ -4,6 +4,6 @@ def print_factors(x):
        if x % i == 0:
            print(i)
 
-num = 123
+num = 987
 
 print_factors(num)
