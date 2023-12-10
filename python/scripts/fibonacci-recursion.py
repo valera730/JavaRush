@@ -4,7 +4,7 @@ def recur_fibo(n):
    else:
        return(recur_fibo(n-1) + recur_fibo(n-2))
 
-nterms = 64
+nterms = 74
 
 if nterms <= 0:
    print("Введите положительное целое число")
