@@ -4,7 +4,7 @@ def factorial(x):
     else:
         return (x * factorial(x-1))
 
-num = 27
+num = 35
 
 result = factorial(num)
 print("Factorial of", num, "is", result)
