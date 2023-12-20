@@ -3,7 +3,7 @@ def convertToBinary(n):
        convertToBinary(n//2)
    print(n % 2,end = '')
 
-dec = 31
+dec = 15
 
 convertToBinary(dec)
 print()
