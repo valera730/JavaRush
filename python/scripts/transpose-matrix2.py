@@ -1,6 +1,6 @@
-X = [[15, 12],
-    [5, 9],
-    [2, 8]]
+X = [[7, 11],
+    [3, 19],
+    [3, 5]]
 
 result = [[X[j][i] for j in range(len(X))] for i in range(len(X[0]))]
 
