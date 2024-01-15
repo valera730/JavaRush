@@ -1,4 +1,4 @@
-my_str = 'Potap'
+my_str = 'Ivan'
 
 my_str = my_str.casefold()
 
