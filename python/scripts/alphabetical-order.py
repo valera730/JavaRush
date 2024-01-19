@@ -1,4 +1,4 @@
-my_str = "Python test string"
+my_str = "Words may be derived naturally from the language's roots or formed by coinage and construction."
 
 words = [word.lower() for word in my_str.split()]
 
