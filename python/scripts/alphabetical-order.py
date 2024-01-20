@@ -1,4 +1,4 @@
-my_str = "Words may be derived naturally from the language's roots or formed by coinage and construction."
+my_str = "Quite astonishingly, the notice was a 630 word sentence, which picked up one of our Golden Bull awards that year."
 
 words = [word.lower() for word in my_str.split()]
 
