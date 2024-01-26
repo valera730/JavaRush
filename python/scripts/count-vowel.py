@@ -1,6 +1,6 @@
 vowels = 'oeuai'
 
-ip_str = 'That is why we have gathered some of the most common English idioms and phrases so you will understand the true meaning of them.'
+ip_str = 'When you understand the words one by one, but not what they mean together, use this question.'
 
 ip_str = ip_str.casefold()
 
