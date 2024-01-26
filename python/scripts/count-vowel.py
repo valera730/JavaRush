@@ -1,6 +1,6 @@
 vowels = 'oeuai'
 
-ip_str = 'When you understand the words one by one, but not what they mean together, use this question.'
+ip_str = 'When you are learning a new language, you will sometimes need to ask clarifying questions to make sure you understood.'
 
 ip_str = ip_str.casefold()
 
