@@ -1,4 +1,4 @@
-ip_str = 'No matter which role a phrase is playing, it’s achieving one simple goal: making your sentences richer by giving your words context, detail, and clarity.'
+ip_str = 'To bite the bullet is to endure a painful or difficult situation with courage and resilience, often involving facing uncomfortable emotions or challenges.'
 
 ip_str = ip_str.casefold()
 
