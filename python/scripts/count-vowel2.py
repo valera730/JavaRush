@@ -1,4 +1,4 @@
-ip_str = 'To bite the bullet is to endure a painful or difficult situation with courage and resilience, often involving facing uncomfortable emotions or challenges.'
+ip_str = 'In English grammar, phrases are groups of words that function together as a unit, but do not have a subject and verb combination that makes a complete sentence.'
 
 ip_str = ip_str.casefold()
 
