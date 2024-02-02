@@ -12,6 +12,6 @@ def jpeg_res(filename):
 
        width = (a[0] << 8) + a[1]
 
-   print("Resolution: ", width, "x" ,height)
+   print("Image resolution: ", width, "x" ,height)
 
-jpeg_res("img1.jpg")
+jpeg_res("image.jpg")
