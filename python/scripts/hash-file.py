@@ -13,5 +13,5 @@ def hash_file(filename):
 
    return h.hexdigest()
 
-message = hash_file("somefile.txt")
+message = hash_file("filename.ext")
 print(message)
