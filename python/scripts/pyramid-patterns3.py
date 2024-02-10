@@ -1,6 +1,6 @@
-rows = int(input("Enter number of rows: "))
+rows = int(input("Number of rows: "))
 
-ascii_value = 65
+ascii_value = 33
 
 for i in range(rows):
     for j in range(i+1):
