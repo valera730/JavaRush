@@ -1,4 +1,4 @@
-rows = int(input("Enter number of rows: "))
+rows = int(input("Number of rows: "))
 
 k = 0
 count=0
