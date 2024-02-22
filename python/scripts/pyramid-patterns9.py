@@ -1,4 +1,4 @@
-rows = int(input("Enter number of rows: "))
+rows = int(input("Number of rows: "))
 coef = 1
 
 for i in range(1, rows+1):
