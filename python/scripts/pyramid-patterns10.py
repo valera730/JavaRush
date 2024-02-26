@@ -1,4 +1,4 @@
-rows = int(input("Number of rows: "))
+rows = int(input("Rows: "))
 number = 1
 
 for i in range(1, rows+1):
