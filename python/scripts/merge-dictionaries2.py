@@ -1,4 +1,4 @@
-dict_1 = {1: 'd', 2: 'a'}
-dict_2 = {2: 'c', 4: 'b'}
+dict_1 = {1: 'z', 2: 'f'}
+dict_2 = {2: 'u', 4: 'h'}
 
 print({**dict_1, **dict_2})
