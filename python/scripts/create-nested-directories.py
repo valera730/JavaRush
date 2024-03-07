@@ -1,2 +1,2 @@
 from pathlib import Path
-Path("/catalog/inner_dir").mkdir(parents=True, exist_ok=True)
+Path("/directory/inner_cat").mkdir(parents=True, exist_ok=True)
