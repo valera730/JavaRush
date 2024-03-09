@@ -1,2 +1,2 @@
 import os
-os.makedirs("/directory/outer_dir/inner_dir")
+os.makedirs("/cat/outer_cat/inner_cat")
