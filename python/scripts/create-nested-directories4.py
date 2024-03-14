@@ -1,5 +1,5 @@
 import os
 try:
-    os.makedirs("/cat/inner_cat")
+    os.makedirs("/dir/inner_dir")
 except FileExistsError:
     print("Catalog already exists")
