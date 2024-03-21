@@ -1,4 +1,4 @@
-my_list = [46, 27, 12, 17]
+my_list = [15, 34, 54, 98]
 
 for index in range(len(my_list)):
     value = my_list[index]
