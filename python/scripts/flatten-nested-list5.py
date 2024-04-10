@@ -1,4 +1,4 @@
 from functools import reduce
 
-my_list = [[51], [4, 9], [15, 71, 83, 28]]
+my_list = [[75], [17, 21], [23, 59, 26, 11]]
 print(reduce(lambda x, y: x+y, my_list))
