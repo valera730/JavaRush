@@ -1,4 +1,4 @@
-dt = {'a': 'PHP', 'b': 'Java', 'c': 'python'}
+dt = {'a': 'Assembler', 'b': 'Swift', 'c': 'Fortran'}
 
 for key, value in dt.items():
     print(key, value)
