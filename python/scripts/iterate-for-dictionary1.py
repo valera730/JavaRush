@@ -1,4 +1,4 @@
-dt = {'a': 'JavaScript', 'b': 'PHP', 'c': 'Python'}
+dt = {'a': 'Objective-C', 'b': 'C#', 'c': 'TypeScript'}
 
 for key in dt:
     print(key, dt[key])
