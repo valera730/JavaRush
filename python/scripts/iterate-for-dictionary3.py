@@ -1,4 +1,4 @@
-dt = {'a': 'assembler', 'b': 'basic', 'c': 'c++'}
+dt = {'a': 'Java', 'b': 'JavaScript', 'c': 'C#'}
 
 for key in dt.keys():
     print(key)
