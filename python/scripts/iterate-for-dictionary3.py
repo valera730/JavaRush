@@ -1,4 +1,4 @@
-dt = {'a': 'Haskell', 'b': 'Groovy', 'c': 'Clipper'}
+dt = {'a': 'Fortran', 'b': 'Powershell', 'c': 'VBA'}
 
 for key in dt.keys():
     print(key)
