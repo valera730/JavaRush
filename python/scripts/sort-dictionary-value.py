@@ -1,4 +1,4 @@
-dt = {2:7, 3:6, 2:9}
+dt = {1:16, 4:12, 3:19}
 
 sorted_dt = {key: value for key, value in sorted(dt.items(), key=lambda item: item[1])}
 
