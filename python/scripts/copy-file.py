@@ -1,2 +1,2 @@
 from shutil import copyfile
-copyfile("/catalog1/file1.txt", "/catalog2/file2.txt")
+copyfile("/directory/file1.txt", "/directory/file2.txt")
