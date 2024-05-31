@@ -1,5 +1,5 @@
-list_1 = [7, 'c']
-list_2 = [2, 4, 1]
+list_1 = [3, 'e']
+list_2 = [5, 6, 9]
 
 list_joined = list_1 + list_2
 print(list_joined)
