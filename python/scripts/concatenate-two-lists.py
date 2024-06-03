@@ -1,5 +1,5 @@
-list_1 = [24, 'z']
-list_2 = [21, 17, 9]
+list_1 = [31, 'f']
+list_2 = [89, 65, 3]
 
 list_joined = list_1 + list_2
 print(list_joined)
