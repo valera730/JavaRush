@@ -1,5 +1,5 @@
-list_1 = [17, 'e']
-list_2 = [31, 45, 76]
+list_1 = [41, 'h']
+list_2 = [25, 37, 11]
 
 list_2.extend(list_1)
 print(list_2)
