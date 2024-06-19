@@ -1,4 +1,4 @@
 import numpy as np
 
-my_list = [61,36,52,17,3,82,96,46,28]
+my_list = [36,42,12,98,71,64,31,27,11]
 print(np.array_split(my_list, 5))
