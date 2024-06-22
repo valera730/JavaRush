@@ -1,4 +1,4 @@
-balance_str = "6546874231"
+balance_str = "987654"
 balance_int = int(balance_str)
 
 print(type(balance_int))
