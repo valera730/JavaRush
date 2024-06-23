@@ -1,1 +1,1 @@
-print('\x1b[38;2;5;86;243m' + ' some text ' + '\x1b[0m')
+print('\x1b[38;2;5;86;243m' + ' colored text ' + '\x1b[0m')
