@@ -1,3 +1,3 @@
 from termcolor import colored
 
-print(colored('colored text', 'green'))
+print(colored('colored text', 'yellow'))
