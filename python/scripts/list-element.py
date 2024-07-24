@@ -1,3 +1,3 @@
-my_list = ['j', 'g', 'b', 's', 'z']
+my_list = ['l', 'u', 't', 'v', 'a']
 
 print(my_list[-1])
