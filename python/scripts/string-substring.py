@@ -1,4 +1,4 @@
-my_string = "London is the capital of Great Britain"
+my_string = "Get a Substring of a String"
 
 print(my_string[2:6])
 
