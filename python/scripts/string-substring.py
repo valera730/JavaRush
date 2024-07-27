@@ -1,4 +1,4 @@
-my_string = "Substring of a String"
+my_string = "Substring"
 
 print(my_string[2:6])
 
