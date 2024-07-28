@@ -1,7 +1,7 @@
 print("Text")
-print("without line break")
+print("without break line")
 
 print()
 
 print("Text", end=" ")
-print("without line break")
+print("without break line")
