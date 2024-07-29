@@ -1,4 +1,4 @@
-with open("file.txt") as f:
+with open("filename.ext") as f:
     content_list = f.readlines()
 
 print(content_list)
