@@ -1,4 +1,4 @@
 import random
 
-my_list = [2, 'g', 7, 'w', 'v', 3]
+my_list = [5, 'a', 3, 'g', 's', 1]
 print(random.choice(my_list))
