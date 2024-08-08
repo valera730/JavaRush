@@ -1,4 +1,4 @@
 import secrets
 
-my_list = [16, 'c', 14, 'd', 'e', 54]
+my_list = [5, 'g', 9, 'h', 'n', 27]
 print(secrets.choice(my_list))
