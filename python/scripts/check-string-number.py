@@ -5,5 +5,5 @@ def isfloat(num):
     except ValueError:
         return False
 
-print(isfloat('a15'))
-print(isfloat('5.12'))
+print(isfloat('b32'))
+print(isfloat('7.654'))
