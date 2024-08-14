@@ -1,2 +1,2 @@
-freq = ['v', 7, 'h', 9, 3, 1, 'n'].count('n')
+freq = ['h', 9, 'm', 3, 1, 17, 'h'].count('h')
 print(freq)
