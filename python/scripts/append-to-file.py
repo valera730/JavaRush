@@ -1,2 +1,2 @@
-with open("some_file.ext", "a") as f:
+with open("append_file.ext", "a") as f:
    f.write("some text")
