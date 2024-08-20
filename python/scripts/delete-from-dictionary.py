@@ -1,4 +1,4 @@
-my_dict = {15: 'b', 17: 'e', 12: 'f'}
+my_dict = {12: 'g', 21: 'h', 19: 'n'}
 
 del my_dict[17]
 
