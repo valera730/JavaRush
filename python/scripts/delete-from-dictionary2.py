@@ -1,5 +1,5 @@
-my_dict = {7: 'g', 21: 'v', 37: 'e'}
+my_dict = {31: 'h', 15: 'b', 23: 'f'}
 
-print(my_dict.pop(37))
+print(my_dict.pop(31))
 
 print(my_dict)
