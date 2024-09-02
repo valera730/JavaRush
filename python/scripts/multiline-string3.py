@@ -1,4 +1,4 @@
-my_string = "Some \n" \
+my_string = "Multi \n" \
         	"line \n" \
         	"string"
 
