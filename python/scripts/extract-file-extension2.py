@@ -1,2 +1,2 @@
 import pathlib
-print(pathlib.Path('/directory/filename.ext').suffix)
+print(pathlib.Path('/catalog/name.ext').suffix)
